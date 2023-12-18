@@ -1,29 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <!-- <meta http-equiv="refresh" content="1"> -->
-    <title>Color_Change_in_javaScript</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1 class="h1">Color name:</h1>
-  </body>
-  <script>
-  var colors = ['red','green','yellow','gray','purple'];
-  var h1 = document.querySelector('h1');
-  var body =  document.querySelector('body');
 
-  function funcRandom(start,end){
-    return Math.floor(Math.random() * (start-end) + end);
-  }
-  setInterval(function(){
-    var i = funcRandom(0, colors.length);
-    body.style.backgroundColor = colors[i];
-    for (var e = 0; e < colors.length; e++) {
-      h1.innerHTML = `Colorn name: ${colors[i]}`
-    }
-  }, 700)
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <title>Color_Change_in_javaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  </script>
- </html>
+<body>
+  <h1 class="h1">Color name:</h1>
+</body>
+<script src="script.js"></script>
+
+</html>
